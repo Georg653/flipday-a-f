@@ -1,0 +1,94 @@
+/* --- Путь: src/components/previews/StoryPreview/StoryPreview.css --- */
+/* ПОЛНАЯ ВЕРСИЯ */
+
+.story-preview-container {
+  position: relative;
+  /* --- ИЗМЕНЕНИЯ ЗДЕСЬ --- */
+  width: 375px;  /* БЫЛО 300px. Делаем стандартный размер как у айфона */
+  height: 667px; /* БЫЛО 533px. Соотношение сторон 9:16 для новой ширины */
+  
+  background-color: #1a1a1a;
+  border-radius: 30px; /* Делаем рамки чуть более скругленными */
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Добавим легкую рамку */
+}
+
+.story-preview-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+.story-progress-bars {
+  position: absolute;
+  top: 12px; /* Чуть больше отступ сверху */
+  left: 8px;
+  right: 8px;
+  display: flex;
+  gap: 4px;
+  z-index: 10;
+}
+
+.progress-bar-wrapper {
+  flex: 1;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 1.5px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #ffffff;
+  width: 0%;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.progress-bar-fill[data-active="true"] {
+  animation-name: fill-progress;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.progress-bar-fill[data-seen="true"] {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+@keyframes fill-progress {
+  from { width: 0%; transform: scaleX(0); }
+  to { width: 100%; transform: scaleX(1); }
+}
+
+.story-slide-content {
+  width: 100%;
+  height: 100%;
+}
+
+.story-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.story-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.story-slide img,
+.story-slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

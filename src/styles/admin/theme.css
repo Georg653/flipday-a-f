@@ -1,0 +1,64 @@
+/* Neutral-black workspace. Preview styles are intentionally isolated. */
+.admin-layout {--admin-background-light:#0d0d0f;--admin-background-card:#111113;--admin-border-color:#29292f;--admin-primary-color:#c3b8f3;--admin-text-dark:#eeeeF2;--admin-text-light:#9c9ca9;display:flex;min-height:100dvh;background:#070708;color:#dedee5;color-scheme:dark}
+.admin-layout .admin-sidebar {width:218px;padding:24px 12px 16px;background:#0b0b0d;border-right:1px solid #242428;position:fixed;inset:0 auto 0 0;height:100dvh;display:flex;flex-direction:column;overflow:hidden;backdrop-filter:none}
+.admin-layout .admin-nav {padding:0;flex:1;min-height:0;overflow-y:auto}
+.admin-layout .admin-nav ul {margin:0;padding:0;list-style:none}
+.admin-layout .admin-nav li {margin:3px 0}
+.admin-layout .admin-nav-link {display:flex;align-items:center;min-height:38px;padding:9px 12px;font-size:12px;font-weight:500;color:#92929f;border:1px solid transparent;border-radius:7px;text-decoration:none;box-shadow:none;line-height:1.4}
+.admin-layout .admin-nav-link:hover {background:#1a1a1e;color:#e5e5ec;text-decoration:none}
+.admin-layout .admin-nav-link.active {background:#26222f;border-color:#443b58;color:#d4c6fc;box-shadow:none}
+.admin-layout .nav-group-header {padding:26px 12px 8px;font-size:9px;font-weight:600;letter-spacing:1.5px;color:#555561}
+.admin-layout .admin-sidebar-footer {padding:16px 10px 0;margin-top:16px;border-top:1px solid #25252a;display:grid;gap:12px}
+.admin-online {display:none}
+.logout-button {font:inherit;font-size:11px;background:transparent;border:0;padding:0;cursor:pointer;text-align:left;color:#82828f}
+.logout-button:hover {color:#d4c6fc}
+.admin-layout .admin-main-content {margin-left:218px;width:calc(100% - 218px);min-width:0;padding:0}
+.admin-layout .page-container {padding:32px 36px;max-width:1840px;margin:0 auto}
+.admin-layout .page-header {padding:0 0 22px;margin-bottom:24px;border:0;border-bottom:1px solid #242428;background:transparent;box-shadow:none;border-radius:0}
+.admin-layout .page-header-title {color:#ececf1;font-size:23px;letter-spacing:-.7px;margin:0;font-weight:600}
+.admin-layout .page-header-filters {padding-top:0;border:0;gap:16px}
+.admin-layout .form-container {color:#dedee5}
+.admin-layout .modal-container {background:#0b0b0d;color:#dedee5;border-color:#2d2d34}
+.admin-layout .modal-header-bar {background:#111113;color:#ededf2;border-color:#29292e}
+.admin-layout .modal-title {color:#ededf2;font-size:17px;margin:0}
+.admin-layout .form-with-preview-main>form.form-container {background:transparent;border:0;padding:0;box-shadow:none}
+.admin-layout .form-with-preview-main .form-actions {background:#0b0b0d;border-color:#29292e;border-radius:0;box-shadow:0 -12px 18px #0b0b0d}
+.admin-layout .form-group label {color:#a6a6b3;font-size:12px;font-weight:500}
+.admin-layout .form-column h4,.admin-layout .form-column-meta h4,.admin-layout .form-column-content h4 {color:#e5e5ed;font-size:14px;font-weight:600}
+.admin-layout .table-action-button-delete {color:#e99baa}
+.admin-layout .table-action-button-delete:hover {color:#ffc1ce;background:#e99baa10}
+.admin-layout .table-main th {background:#151517;color:#85858f}
+.admin-layout .table-main td {color:#ceced8}
+.admin-layout .table-main tbody tr {background:#101012;border-color:#27272b}
+.admin-layout .table-main tbody tr:hover,.admin-layout .table-main tbody tr[data-has-preview=true]:hover {background:#1b1b1f}
+.admin-layout .table-main tbody tr.is-active-for-preview,.admin-layout .table-main tbody tr.is-active-for-preview:hover {background:#24212c;box-shadow:inset 3px 0 #bdb1ee}
+.admin-layout .table-main .status-active {color:#8ed4b4;background:#162c24;border-color:#254739}
+.admin-layout .table-main .status-inactive {color:#aaaab6;background:#26262b;border-color:#3a3a42}
+.admin-layout .pagination-info {color:#7d7d8b;font-size:11px}
+.admin-layout .table-pagination-wrapper {background:#111113;border-color:#29292e}
+.admin-layout .content-blocks-list {background:transparent;border:0;padding:0;overflow:visible}
+.admin-layout :is(.content-block-form,.content-block-editor,.content-block-item) {background:#141416;color:#d1d1db;border:1px solid #2e2e34;border-radius:10px;padding:18px}
+.admin-layout :is(.form-column-meta,.form-column-content) {background:transparent;border:0;padding:0;overflow:visible;height:auto;gap:20px}
+.admin-layout .form-error,.admin-layout .table-status-error {background:#2b181f;border-color:#64313f;color:#efa5b3;font-size:12px}
+.admin-layout .aside-content-column :is(.story-preview-container,.content-preview-container) {max-width:100%}
+.admin-layout .aside-content-column .story-preview-container {width:320px;height:auto;aspect-ratio:9/16}
+.admin-layout .aside-content-column .content-preview-container {width:320px}
+.preview-panel-heading {display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 4px 14px;color:#aaaab6;font-size:12px}
+.preview-panel-heading span {display:block;color:#5e5e6c;font-size:10px;margin-top:3px}
+.preview-panel-heading button {font-size:10px;padding:5px 8px;border:1px solid #36363e;border-radius:6px;background:#161619;color:#a0a0ae;cursor:pointer}
+.admin-layout .content-preview-container {background:#f7fafd;color:#1c1c1e;color-scheme:light;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.admin-layout .story-preview-container {color-scheme:light}
+.admin-layout :is(button,a,input,textarea,[role=combobox]):focus-visible {outline:2px solid #bcb0ef;outline-offset:3px}
+.admin-layout button:disabled {cursor:not-allowed;opacity:.45}
+.admin-layout * {scrollbar-width:thin;scrollbar-color:#3c3c44 transparent}
+.admin-layout ::-webkit-scrollbar {width:7px;height:7px}
+.admin-layout ::-webkit-scrollbar-track {background:transparent}
+.admin-layout ::-webkit-scrollbar-thumb {background:#3c3c44;border:2px solid transparent;border-radius:9px;background-clip:padding-box}
+.admin-layout ::-webkit-scrollbar-thumb:hover {background-color:#62626f}
+.admin-layout ::-webkit-scrollbar-corner {background:transparent}
+.admin-layout :is(.content-preview-container,.story-preview-container) * {scrollbar-color:#b4b4bf transparent}
+body .login-form-wrapper,body .register-form-wrapper {background:#111113;border:1px solid #303036;box-shadow:0 24px 80px #0006;border-radius:14px}
+body .login-title,body .register-title {color:#ededf3;font-size:23px;letter-spacing:-.6px}
+@media(max-width:900px){.admin-layout .admin-sidebar{width:178px;padding:20px 8px}.admin-layout .admin-main-content{margin-left:178px;width:calc(100% - 178px)}.admin-layout .page-container{padding:24px}.admin-layout .admin-nav-link{font-size:11px}}
+@media(max-width:600px){.admin-layout{flex-direction:column}.admin-layout .admin-sidebar{position:static;width:100%;height:auto;padding:10px;border-right:0;border-bottom:1px solid #29292e}.admin-layout .admin-nav{overflow-x:auto;overflow-y:hidden}.admin-layout .admin-nav ul{display:flex;gap:4px;width:max-content}.admin-layout .admin-nav .nav-group-header,.admin-layout .admin-sidebar-footer{display:none}.admin-layout .admin-nav-link{white-space:nowrap;min-height:34px}.admin-layout .admin-main-content{margin:0;width:100%}.admin-layout .page-container{padding:20px 14px}.admin-layout .page-header-title{font-size:20px}}
+@media(prefers-reduced-motion:reduce){.admin-layout * {transition:none!important;scroll-behavior:auto!important}}

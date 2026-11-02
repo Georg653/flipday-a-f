@@ -1,0 +1,19 @@
+/* src/styles/admin/Pagination.css */
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem; /* 16px */
+  margin-top: 1rem;
+  border-top: 1px solid #e5e7eb; /* gray-200 */
+}
+
+.pagination-info {
+  font-size: 0.875rem; /* 14px */
+  color: #4b5563; /* gray-600 */
+}
+
+.pagination-buttons {
+  display: flex;
+  gap: 0.5rem; /* 8px */
+}

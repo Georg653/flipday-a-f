@@ -1,0 +1,12 @@
+{
+  "name": "Городская прогулка",
+  "is_active": true,
+  "expires_at": null,
+  "content_items": [
+    {
+      "type": "image",
+      "content": "https://example.com/replace-with-your-slide.jpg",
+      "duration": 5
+    }
+  ]
+}

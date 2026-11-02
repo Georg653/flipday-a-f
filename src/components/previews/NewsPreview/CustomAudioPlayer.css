@@ -1,0 +1,106 @@
+/* src/components/previews/NewsPreview/CustomAudioPlayer.css */
+.custom-audio-player {
+  width: 100%;
+  padding: 12px 0;
+  font-family: inherit;
+}
+
+.custom-audio-player-title {
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #1c1c1e;
+  text-align: center;
+}
+
+.player-controls {
+  display: flex;
+  justify-content: space-between; /* Главные кнопки слева, опции справа */
+  align-items: center;
+  margin-bottom: 10px;
+  /* padding: 0 5px; Убираем, если кнопки сами себя центрируют */
+}
+
+.player-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Расстояние между кнопками Undo, Play/Pause, Redo */
+  /* Чтобы эта группа была по центру, если родитель .player-controls имеет justify-content: center */
+  /* Либо, если .player-controls это justify-content: space-between, то эта группа будет слева */
+  flex-grow: 1; /* Позволяем этой группе занять место */
+  justify-content: center; /* <--- ЦЕНТРИРУЕМ ОСНОВНЫЕ КНОПКИ */
+}
+
+.player-buttons button,
+.player-options-button button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0; /* Убираем padding у кнопок, размеры будут через иконки */
+  line-height: 0; 
+  display: flex; /* Для центрирования иконки внутри кнопки, если нужно */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Стили для иконок PNG */
+.player-icon {
+  display: block; /* Чтобы alt текст не влиял на размеры */
+  /* Размеры для Undo.png и Redo.png */
+  width: 22px;  /* Подбери по своему дизайну */
+  height: 22px; /* Подбери по своему дизайну */
+  object-fit: contain; /* Чтобы иконка не искажалась */
+}
+
+.play-pause-icon {
+  /* Размеры для Polygon.png и stop.png */
+  width: 30px;  /* Подбери по своему дизайну */
+  height: 30px; /* Подбери по своему дизайну */
+}
+
+.options-icon {
+  /* Размеры для Setting.png */
+  width: 20px;  /* Подбери по своему дизайну */
+  height: 20px; /* Подбери по своему дизайну */
+}
+
+
+.player-options-button {
+  /* Пустой, если кнопка внутри него уже стилизована */
+  /* flex-shrink: 0; Чтобы не сжималась */
+}
+
+
+.progress-bar-container {
+  width: 100%;
+  height: 5px; 
+  background-color: rgba(0, 122, 255, 0.2); 
+  border-radius: 2.5px; 
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar-filled {
+  height: 100%;
+  background-color: #007AFF; /* или #65ACFF */
+  border-radius: 2.5px;
+  width: 0%; 
+  transition: width 0.1s linear;
+}
+
+.time-stamps {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px; 
+  color: #8E8E93; 
+  margin-top: 6px;
+  padding: 0 2px; 
+}
+
+.custom-audio-player-error {
+  color: #ff3b30;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}

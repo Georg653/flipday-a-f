@@ -1,0 +1,10 @@
+.input-base {display:block;width:100%;min-height:40px;padding:9px 12px;background:#0c0c0e;border:1px solid #303036;border-radius:8px;color:#ededf2;font:inherit;font-size:13px;line-height:1.5;outline:none;transition:border-color .15s,box-shadow .15s;color-scheme:dark}
+.input-base::placeholder {color:#656571}
+.input-base:hover:not(:disabled) {border-color:#4c4c57}
+.input-base:focus {border-color:#aba1d9;box-shadow:0 0 0 3px #aba1d912}
+.input-base:disabled {opacity:.45;cursor:not-allowed}
+.input-base[type=file] {padding:8px;font-size:11px;color:#888894}
+.input-base::file-selector-button {background:#25252c;color:#c8c8d2;border:1px solid #454550;border-radius:5px;padding:5px 9px;margin-right:10px;cursor:pointer}
+.input-base[type=number] {appearance:textfield;-moz-appearance:textfield}
+.input-base::-webkit-inner-spin-button {opacity:.4}
+.input-base::-webkit-calendar-picker-indicator {opacity:.6;cursor:pointer}

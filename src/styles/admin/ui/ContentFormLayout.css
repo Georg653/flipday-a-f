@@ -1,0 +1,5 @@
+.content-form-grid {display:grid;grid-template-columns:minmax(240px,.8fr) minmax(300px,1.2fr);gap:24px;overflow:visible;align-items:start}
+.form-column-meta,.form-column-content {display:flex;flex-direction:column;gap:20px;min-width:0;height:auto;overflow:visible;padding:0;background:transparent;border:0}
+.content-blocks-list {display:flex;flex-direction:column;gap:16px;padding:0;border:0;background:transparent;overflow:visible;min-height:0}
+@media(max-width:1480px){.content-form-grid{grid-template-columns:1fr}.form-column-meta{display:grid;grid-template-columns:1fr 1fr;gap:18px}.form-column-meta>h4{grid-column:1/-1}}
+@media(max-width:900px){.form-column-meta{display:flex}}

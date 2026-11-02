@@ -1,0 +1,28 @@
+/* One physical viewport, independent of parent grid, form height or content length. */
+.admin-layout .content-preview-container,.admin-layout .story-preview-container,
+.admin-layout :is(.aside-content-column,.form-with-preview-aside) :is(.content-preview-container,.story-preview-container){box-sizing:border-box;width:320px!important;min-width:320px!important;max-width:320px!important;height:660px!important;min-height:660px!important;max-height:660px!important;aspect-ratio:auto!important;flex:0 0 auto;align-self:start;border:6px solid #25252a;border-radius:36px;overflow:hidden;position:relative;box-shadow:0 14px 45px #0004}
+.admin-layout .main-with-aside-layout{grid-template-columns:minmax(0,1fr) 320px;align-items:start}
+.admin-layout .form-with-preview-layout{grid-template-columns:minmax(0,1fr) 320px}
+.admin-layout .aside-content-column{align-self:start;overflow-x:auto}
+.admin-layout .form-with-preview-aside{align-items:flex-start;justify-content:flex-start;overflow:auto;min-width:0}
+.admin-layout .form-with-preview-aside .preview-sticky-container{width:320px;min-width:320px;flex:none;justify-content:flex-start}
+.phone-status-bar{height:30px;min-height:30px;padding:7px 16px 4px;display:flex;align-items:center;justify-content:space-between;position:relative;flex:none;color:#22232a;background:#f7fafd;font:600 10px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.phone-speaker{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:65px;height:16px;border-radius:20px;background:#25252a}
+.phone-indicators{display:flex;align-items:center}
+.story-preview-container .phone-status-bar{position:absolute;inset:0 0 auto;z-index:12;color:#fff;background:linear-gradient(#0007,transparent)}
+.admin-layout .story-preview-container .story-progress-bars{top:36px;left:10px;right:10px}
+.admin-layout .content-preview-container .preview-header-bar{height:45px;min-height:45px;padding:8px 12px;flex:none}
+.admin-layout .content-preview-container .preview-main-title{font-size:14px;line-height:1.3;min-width:0}
+.admin-layout .content-preview-container .news-preview-screen-content{flex:1 1 0;min-height:0;overflow-y:auto;overflow-x:hidden;padding:14px;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#c0c0c9 transparent}
+.admin-layout .content-preview-container .preview-main-image{width:100%;height:145px;max-height:145px;object-fit:cover;border-radius:10px;margin-bottom:14px}
+.admin-layout .content-preview-container .preview-description,.admin-layout .content-preview-container .preview-text{font-size:14px;line-height:1.5;white-space:pre-wrap;margin:0 0 16px}
+.admin-layout .content-preview-container .preview-heading{font-size:19px;line-height:1.3;margin:22px 0 10px}
+.admin-layout .content-preview-container .preview-image{width:100%;max-height:180px;object-fit:contain;border-radius:9px}
+.admin-layout .content-preview-container .preview-album-image{height:80px;object-fit:cover}
+.admin-layout .content-preview-container .preview-album-title{font-size:15px;margin-bottom:10px}
+.admin-layout .content-preview-container .preview-video-player{max-width:100%;max-height:180px}
+.admin-layout .content-preview-container .preview-image-block{margin:16px 0}
+.admin-layout .content-preview-container .preview-test-question{font-size:15px}
+.admin-layout .content-preview-container .preview-test-option{font-size:13px}
+@media(max-width:1240px){.admin-layout .main-with-aside-layout{display:flex}.admin-layout .aside-content-column{align-self:stretch;display:flex;justify-content:flex-start}.admin-layout .aside-content-column .preview-sticky-container{width:320px;min-width:320px}}
+@media(max-width:760px){.admin-layout .form-with-preview-layout{display:block}.admin-layout .form-with-preview-aside{justify-content:flex-start}}

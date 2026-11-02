@@ -1,0 +1,38 @@
+/* src/components/admin/ProposalsManagement/ProposalStatusUpdateModal.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Выше остального контента */
+}
+
+.modal-content.proposal-status-modal {
+  /* form-container уже дает padding, background, border-radius, box-shadow */
+  width: 100%;
+  max-width: 500px; /* Максимальная ширина модального окна */
+  /* Можно добавить анимацию появления, если нужно */
+}
+
+.proposal-status-modal p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--admin-text-light, #555);
+}
+
+.proposal-status-modal p strong {
+  color: var(--admin-text-dark, var(--admin-text-dark));
+  font-weight: 600;
+}
+
+.form-field-info {
+    font-size: 0.8rem;
+    color: #525252; /* neutral-600 */
+    margin-top: 0.25rem;
+}

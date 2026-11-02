@@ -1,0 +1,12 @@
+.story-editor .editor-section {display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:22px;border:1px solid #2a2a30;border-radius:12px;background:#101012;align-content:start}
+.story-editor .editor-section>h4 {grid-column:1/-1;margin:0 0 3px;font-size:14px;font-weight:600;letter-spacing:-.2px}
+.story-editor .editor-section>.form-group:has(.image-upload-container) {grid-column:1/-1}
+.story-editor .editor-section>.story-content-items-list,.story-editor .editor-section>.button-base {grid-column:1/-1}
+.story-content-items-list {display:flex;flex-direction:column;gap:14px}
+.story-content-item {display:grid;grid-template-columns:minmax(0,1fr) 140px;gap:16px;padding:18px;background:#151517;border:1px solid #303036;border-radius:10px}
+.content-item-header {display:flex;align-items:center;justify-content:space-between;gap:12px;grid-column:1/-1;padding-bottom:12px;border-bottom:1px solid #29292f}
+.content-item-header h5 {margin:0;color:#cfcfd8;font-size:12px;font-weight:600}
+.story-content-item>.form-group:last-child {grid-column:1/-1}
+.content-item-header .button-destructive {background:transparent;color:#dc8e9c;border:1px solid #53303a;min-height:28px;padding:4px 8px;font-size:10px}
+.form-field-error {font-size:11px;color:#e79da9;margin-top:4px}
+@media(max-width:1000px){.story-editor .editor-section{grid-template-columns:1fr;padding:18px}.story-content-item{grid-template-columns:1fr}.story-editor .editor-section>*{grid-column:1/-1}}

@@ -1,0 +1,16 @@
+{
+  "name": "Остановка у набережной",
+  "description": "Место для короткой паузы.",
+  "latitude": 53.9,
+  "longitude": 27.56,
+  "is_partner": false,
+  "budget": 0,
+  "content_data": {
+    "content": [
+      {
+        "type": "text",
+        "content": "Посмотрите на город с новой стороны."
+      }
+    ]
+  }
+}

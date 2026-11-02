@@ -1,0 +1,5 @@
+.admin-layout {display:flex;min-height:100dvh;background:#070708;color:#dedee5}
+.admin-sidebar {display:flex;flex-direction:column;position:fixed;inset:0 auto 0 0;width:218px;z-index:100;background:#0b0b0d;border-right:1px solid #242428}
+.admin-nav {flex:1;min-height:0;overflow:auto}
+.admin-nav ul {list-style:none;padding:0;margin:0}
+.admin-main-content {min-width:0;flex:1;margin-left:218px}

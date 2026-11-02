@@ -1,0 +1,136 @@
+/* --- Путь: src/components/previews/ContentPreview/ContentPreview.css --- */
+/* ПОЛНАЯ ВЕРСИЯ */
+
+.content-preview-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #F7FAFD;
+  width: 390px;
+  height: 750px;
+  border: 1px solid #d1d1d6; 
+  border-radius: 30px; 
+  color: #1c1c1e; 
+  line-height: 1.45; 
+  display: flex; 
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+  overflow: hidden;
+  transition: transform 0.2s ease-out;
+}
+.preview-header-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px; 
+  padding-top: 14px; 
+  background-color: #F7FAFD;
+  border-bottom: 0.5px solid #dcdce1;
+  z-index: 10; 
+  flex-shrink: 0;
+}
+.preview-back-button-placeholder {
+  font-size: 28px; 
+  font-weight: normal; 
+  color: #007AFF; 
+  margin-right: 8px; 
+  line-height: 1;
+  user-select: none; 
+}
+.preview-main-title {
+  font-size: 17px;
+  font-weight: 600; 
+  color: #1c1c1e; 
+  margin: 0; 
+  text-align: center;
+  flex-grow: 1; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 30px;
+}
+.news-preview-screen-content {
+  padding: 16px;
+  overflow-y: auto;
+  flex-grow: 1;
+  -webkit-overflow-scrolling: touch; 
+  position: relative; 
+  background-size: cover;
+  background-position: center;
+}
+.news-preview-screen-content.has-background .preview-main-title,
+.news-preview-screen-content.has-background .preview-description,
+.news-preview-screen-content.has-background .preview-heading,
+.news-preview-screen-content.has-background .preview-text {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+.news-preview-screen-content::-webkit-scrollbar { width: 6px; }
+.news-preview-screen-content::-webkit-scrollbar-thumb { background-color: #c7c7cc; border-radius: 3px; }
+.news-preview-screen-content::-webkit-scrollbar-track { background-color: transparent; }
+.preview-placeholder,
+.preview-no-content {
+  color: #8a8a8e; text-align: center; padding: 40px 20px; 
+  font-style: italic; font-size: 15px;
+}
+.preview-main-image {
+  width: 100%;
+  max-height: 250px; 
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  display: block;
+}
+.preview-description {
+  font-size: 16px; color: #3c3c43;
+  margin-bottom: 20px; line-height: 1.5;
+}
+.preview-content-blocks { margin-top: 16px; }
+.preview-heading {
+  font-size: 22px; font-weight: 700; color: #1c1c1e;
+  margin-top: 28px; margin-bottom: 8px; line-height: 1.35;
+}
+.preview-heading:first-child { margin-top: 0; }
+.preview-text {
+  font-size: 16px; margin-bottom: 16px; color: #1c1c1e; line-height: 1.55;
+}
+.preview-image-block { margin: 20px 0; }
+.preview-image { width: 100%; border-radius: 10px; display: block; }
+.preview-image-placeholder { 
+    width: 100%; min-height: 150px; background-color: #e5e5ea;
+    border-radius: 10px; display: flex; align-items: center;
+    justify-content: center; color: #8a8a8e; font-size: 14px;
+    margin-bottom: 8px;
+}
+.preview-image-caption { font-size: 13px; color: #8e8e93; text-align: center; margin-top: 8px; }
+.preview-test-block { margin: 28px 0; }
+.preview-test-question { font-size: 17px; font-weight: 600; color: #1c1c1e; margin-bottom: 20px; text-align: left; }
+.preview-test-options { display: flex; flex-direction: column; gap: 10px; }
+.preview-test-option {
+  display: block; width: 100%;   
+  padding: 10px 18px;
+  border: 1.5px solid #65ACFF;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  text-align: center;   
+  font-size: 15px;    
+  font-weight: 500; 
+  color: #65ACFF;
+  cursor: default; 
+}
+.preview-test-option.simulated-correct { 
+  background-color: #65ACFF;
+  color: #FFFFFF;
+  border-color: #65ACFF;    
+}
+.preview-test-message { font-size: 14px; color: #8e8e93; margin-top: 16px; text-align: center; }
+.preview-audio-block { margin: 28px 0; }
+.preview-album-block { margin: 28px 0; }
+.preview-album-title { font-size: 18px; font-weight: 600; color: #1c1c1e; margin-bottom: 12px; }
+.preview-album-images { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 8px; }
+.preview-album-image { width: 100%; height: 100px; object-fit: cover; border-radius: 8px; }
+.preview-unknown-block {
+    padding: 20px;
+    border: 1px dashed #ff3b30;
+    color: #ff3b30;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px 0;
+}

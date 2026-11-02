@@ -1,0 +1,68 @@
+/* --- Путь: src/components/admin/NewsManagement/ContentBlockForm.css --- */
+
+.content-block-form {
+  border: 1px solid var(--admin-border-color);
+  border-radius: 8px;
+  background-color: var(--admin-background-card);
+  padding: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06);
+}
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--admin-border-color);
+}
+.block-title {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--admin-text-dark);
+}
+.block-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+.block-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.heading-editor {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.heading-editor .form-group {
+  flex-grow: 0;
+}
+
+/* --- НОВЫЕ СТИЛИ ДЛЯ АЛЬБОМА/СЛАЙДЕРА --- */
+.collection-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-top: 1px solid var(--admin-border-color);
+  padding-top: 1rem;
+}
+.collection-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+.collection-item {
+  position: relative;
+  border: 1px solid var(--admin-border-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.collection-item .image-upload-preview-area {
+    height: 120px; /* Фиксируем высоту для красоты */
+}
+.collection-item-delete {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  z-index: 10;
+}

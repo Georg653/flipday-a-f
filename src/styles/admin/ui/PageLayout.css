@@ -1,0 +1,8 @@
+/* src/styles/admin/ui/PageLayout.css */
+.page-container {
+  padding: 1.5rem; /* 24px */
+  /* Можно добавить max-width и margin: auto для центрирования контента, если нужно */
+  /* max-width: 1280px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}

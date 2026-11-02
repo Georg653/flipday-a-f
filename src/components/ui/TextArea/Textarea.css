@@ -1,0 +1,2 @@
+.textarea-base {display:block;width:100%;min-height:90px;resize:vertical;padding:10px 12px;background:#0c0c0e;color:#ededf2;border:1px solid #303036;border-radius:8px;font:inherit;font-size:13px;line-height:1.6;outline:none;transition:border-color .15s}
+.textarea-base::placeholder {color:#656571}.textarea-base:hover {border-color:#4c4c57}.textarea-base:focus {border-color:#aba1d9;box-shadow:0 0 0 3px #aba1d912}.textarea-base:disabled{opacity:.45;cursor:not-allowed}

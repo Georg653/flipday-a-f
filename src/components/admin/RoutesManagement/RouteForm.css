@@ -1,0 +1,43 @@
+/* --- Путь: src/components/admin/RoutesManagement/RouteForm.css --- */
+/* ПОЛНАЯ ВЕРСИЯ */
+
+/* Главный контейнер формы становится flex-оберткой, чтобы прижать кнопки */
+.route-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Грид для двух колонок: настроек и точек */
+.route-form-grid {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 2rem;
+  flex-grow: 1; /* Растягивается на всю доступную высоту */
+  overflow: hidden; /* Важно для дочерних скроллов */
+}
+
+/* Левая колонка (основные настройки) */
+.form-column-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto; /* Скроллится, если не влезает */
+  height: 100%;
+  padding-right: 1rem;
+}
+
+/* Правая колонка (менеджер точек) */
+.form-column-points {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0; /* Трюк для правильной работы flex/grid */
+}
+
+/* Стили для полей в одну линию (дистанция, время, бюджет) */
+.form-group-inline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}

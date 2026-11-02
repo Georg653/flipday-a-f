@@ -1,0 +1,6 @@
+.page-header {padding:0 0 24px;margin:0 0 24px;background:transparent;border:0;border-bottom:1px solid #242428;box-shadow:none}
+.page-header-top {display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:20px}
+.page-header-top:last-child {margin-bottom:0}
+.page-header-title {font-size:24px;line-height:1.3;font-weight:600;letter-spacing:-.7px;color:#f1f1f4;margin:0}
+.page-header-filters {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,320px));gap:16px;padding-top:0;border:0}
+.filter-item {min-width:0}

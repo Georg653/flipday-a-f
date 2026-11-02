@@ -1,0 +1,15 @@
+.form-container {background:var(--admin-background-card,#111113);border:1px solid var(--admin-border-color,#2b2b30);border-radius:12px;padding:24px;margin-bottom:24px;color:#dedee5}
+.form-title {margin:0 0 24px;font-size:18px;font-weight:600;letter-spacing:-.3px;color:#f0f0f3}
+.form-inputs {display:grid;gap:20px}
+.form-group {display:flex;flex-direction:column;gap:8px;min-width:0}
+.form-group label {font-size:12px;line-height:1.4;font-weight:500;color:#a6a6b2;margin:0}
+.form-group-checkbox {flex-direction:row;align-items:center;gap:10px}
+.form-error {color:#efa3b0;background:#2a181f;border:1px solid #63303e;padding:12px 14px;border-radius:8px;font-size:12px;margin:0 0 18px}
+.form-loading-message {padding:30px;color:#858591;text-align:center;font-size:13px}
+.form-actions {display:flex;align-items:center;gap:10px;justify-content:flex-start;margin-top:28px;padding-top:20px;border-top:1px solid #29292e}
+.form-group :is(input,textarea,select) {max-width:100%;box-sizing:border-box}
+.form-column {display:flex;flex-direction:column;gap:18px}
+.form-column>h4,.form-column-meta>h4,.form-column-content>h4 {margin:0 0 4px;font-size:14px;font-weight:600;color:#ececf0}
+.content-block-form .form-group {margin-bottom:16px}
+.form-group-array-item {display:flex;align-items:center;gap:10px}
+.form-group-array-item>:first-child {flex:1;min-width:0}

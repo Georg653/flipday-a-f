@@ -1,0 +1,157 @@
+/* --- Путь: src/components/ui/CustomAudioPlayer/CustomAudioPlayer.css --- */
+/* ПОЛНОСТЬЮ ПЕРЕПИСАННАЯ ВЕРСИЯ */
+
+.custom-audio-player {
+  /* Определяем переменные для легкой кастомизации */
+  --player-accent-color: #007AFF;
+  --player-track-color: rgba(0, 122, 255, 0.2);
+  --player-text-color: #1c1c1e;
+  --player-time-color: #8E8E93;
+  --player-icon-color-filter: none; /* Для будущей стилизации SVG иконок */
+
+  width: 100%;
+  padding: 12px 0;
+  font-family: inherit;
+  transition: opacity 0.3s ease;
+}
+
+/* Состояния плеера */
+.custom-audio-player.is-loading,
+.custom-audio-player.is-disabled {
+  opacity: 0.6;
+}
+.custom-audio-player.is-disabled {
+    cursor: not-allowed;
+}
+
+.custom-audio-player-title {
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: var(--player-text-color);
+  text-align: center;
+}
+
+.player-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.player-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.player-buttons button,
+.player-options-button button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease-out;
+}
+.player-buttons button:not(:disabled):active {
+    transform: scale(0.9); /* Эффект нажатия */
+}
+
+.player-buttons button:disabled {
+    cursor: not-allowed;
+    filter: grayscale(80%); /* Делаем иконки серыми, когда они неактивны */
+}
+
+/* Стили для иконок */
+.player-icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.play-pause-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.options-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Стили для прогресс-бара на input[type=range] */
+.progress-bar-container {
+  width: 100%;
+  height: 12px; /* Увеличим высоту для удобства попадания курсором */
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: var(--player-track-color);
+  border-radius: 2.5px;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.progress-bar-slider:disabled {
+  background: #e5e5ea;
+  cursor: not-allowed;
+}
+
+/* Стили для "ручки" (ползунка) */
+.progress-bar-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: var(--player-accent-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+.progress-bar-slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: var(--player-accent-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Эффект при наведении на сам трек, если он не выключен */
+.progress-bar-slider:not(:disabled):hover::-webkit-slider-thumb {
+    transform: scale(1.2);
+}
+.progress-bar-slider:not(:disabled):hover::-moz-range-thumb {
+    transform: scale(1.2);
+}
+
+.time-stamps {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px; 
+  color: var(--player-time-color); 
+  margin-top: 6px;
+  padding: 0 2px; 
+}
+
+.custom-audio-player-error {
+  color: #ff3b30;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  border: 1px dashed #e2e8f0;
+  border-radius: 8px;
+  background-color: rgba(255, 59, 48, 0.05);
+}

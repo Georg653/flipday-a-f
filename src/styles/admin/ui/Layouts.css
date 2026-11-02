@@ -1,0 +1,17 @@
+.form-with-preview-layout {display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:32px;min-height:0;height:100%;width:100%;overflow:hidden}
+.form-with-preview-main {min-width:0;min-height:0;overflow-y:auto;overflow-x:hidden;padding-right:14px;scroll-padding-bottom:100px}
+.form-with-preview-main>form.form-container {margin:0;padding:0;border:0;box-shadow:none;background:transparent;display:flex;flex-direction:column;gap:24px;min-height:100%}
+.form-with-preview-aside {min-width:0;overflow-y:auto;overflow-x:hidden;display:flex;align-items:flex-start;justify-content:center;padding:0 4px;}
+.form-with-preview-aside .preview-sticky-container {width:100%;display:flex;justify-content:center;position:sticky;top:0}
+.form-with-preview-aside :is(.story-preview-container,.content-preview-container) {max-width:100%}
+.form-with-preview-aside .story-preview-container {width:340px;height:auto;aspect-ratio:9/16}
+.form-with-preview-aside .content-preview-container {width:340px;height:min(680px,75vh)}
+.form-with-preview-main .form-actions {position:sticky;bottom:0;margin-top:auto;background:#0b0b0d;z-index:6;padding:18px 0 4px;flex:none}
+.main-with-aside-layout {display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:28px;align-items:start}
+.main-content-column,.aside-content-column {min-width:0}
+.aside-content-column .preview-sticky-container {position:sticky;top:24px}
+.aside-preview-header {display:flex;align-items:center;justify-content:space-between;margin:0 0 12px;color:#adadb9;font-size:12px}
+.aside-close-btn {border:1px solid #35353b;background:#18181c;color:#aaaab6;border-radius:6px;width:28px;height:28px;cursor:pointer}
+@media(max-width:1240px){.main-with-aside-layout{display:flex;flex-direction:column}.main-content-column{width:100%}.aside-content-column{display:flex;justify-content:center;width:100%}.aside-content-column .preview-sticky-container{position:static}}
+@media(max-width:1000px){.form-with-preview-layout{grid-template-columns:minmax(0,1fr) 280px;gap:22px}}
+@media(max-width:760px){.form-with-preview-layout{display:block;overflow:auto}.form-with-preview-main{overflow:visible;padding-right:0}.form-with-preview-aside{margin-top:24px;overflow:visible}.form-with-preview-main .form-actions{position:static}.form-with-preview-main>form.form-container{min-height:0}}

@@ -1,0 +1,12 @@
+{
+  "name": "Короткий маршрут",
+  "description": "Прогулка с двумя остановками.",
+  "route_category_id": 1,
+  "points": [
+    1,
+    2
+  ],
+  "distance": 1500,
+  "estimated_time": 30,
+  "budget": 0
+}

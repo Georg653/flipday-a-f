@@ -1,0 +1,66 @@
+/* src/pages/RegisterPage/RegisterPage.css */
+/* Можно использовать те же стили, что и для LoginPage.css, изменив префиксы классов */
+.register-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.register-form-wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px; /* Чуть шире из-за доп. поля */
+  backdrop-filter: blur(5px);
+}
+
+.register-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--admin-text-dark, #333);
+  margin-bottom: 1.5rem;
+}
+
+.register-form-wrapper .form-group {
+  margin-bottom: 1.25rem;
+}
+.register-form-wrapper .form-group label {
+  display: block;
+  margin-bottom: 0.375rem;
+  font-weight: 500;
+  color: var(--admin-text-light, #555);
+}
+.register-form-wrapper .input-base {
+  height: 3rem;
+  font-size: 1rem;
+}
+
+.register-error {
+  background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;
+  padding: 0.75rem 1.25rem; margin-bottom: 1rem; border-radius: 0.25rem;
+  font-size: 0.9rem;
+}
+.register-success {
+  background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb;
+  padding: 0.75rem 1.25rem; margin-bottom: 1rem; border-radius: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.register-links { /* Стили для ссылок */
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.register-links a, .register-success a {
+  color: var(--admin-primary-color, #007bff);
+  text-decoration: none;
+  font-weight: 500;
+}
+.register-links a:hover, .register-success a:hover {
+  text-decoration: underline;
+}

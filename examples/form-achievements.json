@@ -1,0 +1,7 @@
+{
+  "name": "Первые пять мест",
+  "description": "Посетите пять точек.",
+  "achievement_type": "points_visited",
+  "criteria_value": 5,
+  "criteria_unit": "мест"
+}
